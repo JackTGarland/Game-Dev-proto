@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script type="text/javascript" src="lib/impact/impact.js"></script>
+	<script type="text/javascript" src="lib/game/main.js"></script>
+    
+</head>
+<body>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <h4> Login </h4>
+            <div class="container">
+                <div class="input-field col s12">
+                    <input id="login-username" type="text" class="validate">
+                    <label for="login-username">Username</label>
+                </div>
+
+                <div class="input-field col s12">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+                <div class="modal-footer">
+                    <a id="registerButton"class="waves-effect waves-light orange btn">Register</a>
+                    <a id="loginButton" class="waves-effect waves-light btn">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--
+    <div id="background">
+        <div id="fadedBack" class="hidden">
+            <div id="formWrapper" calss="hidden">
+                <form id="loginbox" action="">
+                    <h1>Login</h1>
+                    <h1 id="wrong" class="hidden">Username or password inccorect</h1>
+                    <input type="email" id="e-mail" placeholder="E-mail"/>
+                    </br>
+                    <input type="password" id="password" placeholder="password"/>
+                    </br>
+                    <button type="button" id="loginButton" name="login" onclick="loginform()">Login</button>
+                </form>
+            </div>
+        </div>
+        -->
+        <canvas id="canvas"> <!-- VIDEO GAME GOES HERE!!--></canvas>
+        <div id="inventory" class="card ">
+            <div class="inventory-row">
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+            </div>
+            <div class="inventory-row">
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+            </div>
+            <div class="inventory-row">
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+            </div>
+            <div class="inventory-row">
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+            </div>
+            <div class="inventory-row">
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+            </div>
+            <div class="inventory-row">
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+            </div>
+            <div class="inventory-row">
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+            </div>
+        </div>
+            <button onclick="invtest()">invtest</button>
+        <div id="chatboxWraper">
+            <ul id="messages"></ul>
+            <form id="chatbox" action="">
+                <input id="textchat" type="text" placeholder="Type here"/><button id="chatsend" type="submit" name="send" onclick="send()">send</button>
+            </form>
+        </div>
+    </div>
+
+ 
+
+</body>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/inventory.js"></script>
+    
+
+</html>

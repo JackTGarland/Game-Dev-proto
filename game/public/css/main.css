@@ -1,0 +1,123 @@
+body, #background{
+    width: 100%;
+    height: 100%;
+}
+canvas {
+    width: 1000px;
+    height: 800px;
+    border: 5px solid black;
+    float: left;
+}
+#chatboxWraper {
+    float: left;
+    width: 200px;
+    height: 600px;
+    border: 5px solid black;
+}
+
+#messages { 
+    list-style-type: none; 
+    width: 200px;
+    height: 546px;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+#chatbox{
+    width: 200px;
+    height: 52px;
+}
+#textchat{
+    width: 138px;
+    height: 52px;
+    padding: 0px;
+    border: 1px solid black;
+}
+#chatsend{
+    padding: 0px;
+    width: 60px;
+    border: 2px solid black;
+    height: 54px;
+}
+#fadedBack{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0
+}
+#formWrapper{
+    margin-top: 20%;
+    text-align: center;
+}
+#loginbox{
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    background-color: aliceblue;
+    display: block;
+    margin: 40px;
+    padding: 10px;
+    display: inline-block;
+}
+input[type=email]{
+    margin-bottom: 2.5px;
+}
+input[type=password]{
+    margin-top: 2.5px;
+    margin-bottom: 5px;
+}
+input[type=button] {
+    background-color: rgb(37, 71, 224); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+h1{
+    text-align: center;
+}
+#wrong{
+    text-align: center;
+    color: red;
+}
+
+#inventory{
+    width:400px;
+    height:800px;
+    display: flex;
+    margin: inherit;
+    background-color: #2c3e50;
+    display:table;
+}
+
+.inventory-row{
+    width:400px;
+    height:100px;
+    display:flex
+}
+
+.inventory-item{
+    width:90px;
+    height:90px;
+    background-color:white;
+    margin-left:5px;
+    margin-right:3px;
+    
+}

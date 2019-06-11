@@ -1,0 +1,51 @@
+create table user(
+id int AUTO_INCREMENT,
+username VARCHAR(20),
+password VARCHAR(25),
+PRIMARY KEY (id)
+);
+INSERT INTO user (username, password) VALUES ('test', 'password');
+
+CREATE TABLE item(
+id INT AUTO_INCREMENT,
+name varchar(20),
+type int(4),
+PRIMARY KEY (id)
+);
+
+CREATE TABLE i_type (
+tid INT AUTO_INCREMENT,
+name VARCHAR(20),
+PRIMARY KEY (tid)
+);
+
+alter table item add foreign key (type) references i_type (tid);
+
+CREATE TABLE player(
+pid INT AUTO_INCREMENT,
+userid int,
+name varchar(20),
+stat1 int(1),
+stat2 int(1),
+stat3 int(1),
+stat4 int(1),
+stat5 int(1),
+PRIMARY KEY (pid),
+foreign key (userid) references user(id)
+);
+CREATE TABLE inv(
+id int auto_increment,
+pid int,
+iid int,
+quainty int,
+foreign key (iid) references item (id),
+foreign key (pid) references player (pid),
+primary key (id)
+);
+
+INSERT INTO i_type (name) VALUES ('sword');
+
+INSERT INTO item (name, type) VALUES ('iron sword', 1);
+
+SELECT i_type.name FROM i_type, item WHERE item.type = tid;
+
